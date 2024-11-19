@@ -1,5 +1,6 @@
 import './App.css';
 import CourseListCard from './components/step04/CourseListCard';
+import PackingList from './components/step05/PackingList';
 
 
 function App() {
@@ -27,6 +28,8 @@ function App() {
   return (
     <div className='App'>
       {ischk ? <h2>Hello, react</h2> : <CourseListCard items={items} />  }
+      <hr />
+      <PackingList />
     </div>
   );
 }
