@@ -3,7 +3,7 @@ import Item from './Item';
 
 function PackingList(props) {
     return (
-        <section>
+        <section className='listItems'>
             <h1>조건부 렌더링</h1>
             <ul>
                 <Item 

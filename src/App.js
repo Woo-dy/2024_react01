@@ -1,6 +1,9 @@
 import './App.css';
 import CourseListCard from './components/step04/CourseListCard';
 import PackingList from './components/step05/PackingList';
+import TextList from './components/step06/TextList';
+import TextList2 from './components/step06/TextList2';
+import TextList3 from './components/step06/TextList3';
 
 
 function App() {
@@ -30,6 +33,14 @@ function App() {
       {ischk ? <h2>Hello, react</h2> : <CourseListCard items={items} />  }
       <hr />
       <PackingList />
+      <hr />
+      {/* key 값이 없어서 오류 발생 */}
+      <TextList />
+      <hr />
+      {/* key 값이 있으므로 오류 없음 */}
+      <TextList2 />
+      <hr />
+      <TextList3 />
     </div>
   );
 }

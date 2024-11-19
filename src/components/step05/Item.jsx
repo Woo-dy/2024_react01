@@ -37,7 +37,6 @@ function Item({name, isPacked}) {
     return (
         <li>{itemContent}</li>
     );
-
 }
 
 export default Item;
