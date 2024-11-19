@@ -4,6 +4,8 @@ import PackingList from './components/step05/PackingList';
 import TextList from './components/step06/TextList';
 import TextList2 from './components/step06/TextList2';
 import TextList3 from './components/step06/TextList3';
+import Event01 from './components/step07/Event01';
+import Event02 from './components/step07/Event02';
 
 
 function App() {
@@ -38,12 +40,21 @@ function App() {
       <PackingList />
       <hr />
       {/* key 값이 없어서 오류 발생 */}
+      <h1 className='listItems'>key 값이 없어서 오류 발생</h1>
       <TextList />
       <hr />
       {/* key 값이 있으므로 오류 없음 */}
+      <h1 className='listItems'>key 값이 있으므로 오류 없음</h1>
       <TextList2 />
       <hr />
+      <h1 className='listItems'>특정 값만 출력</h1>
       <TextList3 />
+      <hr />
+      <h1 className='listItems'>이벤트 핸들러 Btn1</h1>
+      <Event01 />
+      <hr />
+      <h1 className='listItems'>이벤트 핸들러 Btn2</h1>
+      <Event02 />
     </div>
   );
 }

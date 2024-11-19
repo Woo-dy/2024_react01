@@ -25,6 +25,16 @@ main {
 .listItems li {
   list-style: circle;
   list-style-position: inside;
+  line-height: 26px;
+}
+
+.listItems h1 {
+  margin-bottom: 12px;
+}
+
+h1.listItems {
+  font-size: 1.5em;
+  margin-bottom: 12px;
 }
 
 /* Card */
@@ -66,6 +76,7 @@ main {
 
 .course__title {
   font-weight: 500;
+  word-break: keep-all;
 }
 .course__body {
   flex-grow: 1;
@@ -74,6 +85,7 @@ main {
   color: #777777;
   font-weight: 300;
   margin-top: .4rem;
+  word-break: keep-all;
 }
 .course__icons {
   display: flex;
@@ -103,5 +115,11 @@ hr {
 .btn_img {
   width: 20px;
   color: red;
+}
+
+button {
+  margin: 0 10px 0 0;
+  padding: 6px 10px;
+  cursor: pointer;
 }
 
