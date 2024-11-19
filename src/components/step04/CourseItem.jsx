@@ -1,6 +1,22 @@
 import React from 'react';
 
-function CourseItem({image, title, description}) {
+function HeartIconBtn({ chk = false }) {
+    if (chk) {
+        return(
+            <button className='btn'>
+                <img className='btn_img' src='./img/heart-fill-icon.svg' alt='heart-fill-icon' />
+            </button>
+        )
+    }
+
+    return(
+        <button className='btn'>
+            <img className='btn_img' src='./img/heart-icon.svg' alt='heart-icon' />
+        </button>
+    )
+}
+
+function CourseItem({image, title, description, isFavorite}) {
     return (
         <>
             <article className="course">
@@ -12,6 +28,9 @@ function CourseItem({image, title, description}) {
                     <div className="course__description">
                         {description}
                     </div>
+                </div>
+                <div className='course_icons'>
+                    <HeartIconBtn chk={isFavorite} />
                 </div>
             </article>
         </>

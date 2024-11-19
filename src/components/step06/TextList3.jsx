@@ -34,7 +34,7 @@ function TextList3(props) {
     });
 
     return (
-        <ul className='filter'>
+        <ul className='listItems'>
             {listItems}    
         </ul>
     );
