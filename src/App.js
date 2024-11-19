@@ -1,4 +1,6 @@
 import './App.css';
+import Comment from './components/step03/Comment';
+import CommentList from './components/step03/CommentList';
 import CourseListCard from './components/step04/CourseListCard';
 import PackingList from './components/step05/PackingList';
 import TextList from './components/step06/TextList';
@@ -6,6 +8,8 @@ import TextList2 from './components/step06/TextList2';
 import TextList3 from './components/step06/TextList3';
 import Event01 from './components/step07/Event01';
 import Event02 from './components/step07/Event02';
+import Count from './components/step08/Count';
+import CourseListCard08 from './components/step08/CourseListCard08';
 
 
 function App() {
@@ -36,25 +40,45 @@ function App() {
   return (
     <div className='App'>
       {ischk ? <h2>Hello, react</h2> : <CourseListCard items={items} />  }
+      
       <hr />
       <PackingList />
+
+      <hr />
+      <h1 className='listItems'>CommentList 출력</h1>
+      <div className='listItems'>
+        <CommentList />
+      </div>
+
       <hr />
       {/* key 값이 없어서 오류 발생 */}
       <h1 className='listItems'>key 값이 없어서 오류 발생</h1>
       <TextList />
+
       <hr />
       {/* key 값이 있으므로 오류 없음 */}
       <h1 className='listItems'>key 값이 있으므로 오류 없음</h1>
       <TextList2 />
+
       <hr />
       <h1 className='listItems'>특정 값만 출력</h1>
       <TextList3 />
+
       <hr />
       <h1 className='listItems'>이벤트 핸들러 Btn1</h1>
       <Event01 />
+
       <hr />
       <h1 className='listItems'>이벤트 핸들러 Btn2</h1>
       <Event02 />
+
+      <hr />
+      <h1 className='listItems'>이벤트 핸들러 좋아요 Btn</h1>
+      <CourseListCard08 items={items} />
+
+      <hr />
+      <h1 className='listItems'>이벤트 카운트</h1>
+      <Count />
     </div>
   );
 }

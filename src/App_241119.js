@@ -1,5 +1,4 @@
 import './App.css';
-import Profile from './components/step02/Profile';
 import Comment from './components/step03/Comment';
 
 // function Header() {

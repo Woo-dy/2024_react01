@@ -37,6 +37,38 @@ h1.listItems {
   margin-bottom: 12px;
 }
 
+.boxItems {
+
+} 
+
+.boxItems button {
+  margin: 0 0px 0 0;
+  padding: 0;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+} 
+
+.boxItems button:hover {
+  border: 1px solid tomato;
+  color: tomato;
+}
+
+.box_cnt {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 12px 0 12px;
+}
+
+
+
 /* Card */
 .card {
   background-color: white;

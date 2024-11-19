@@ -1,26 +1,24 @@
 import React from 'react';
 
 function HeartIconBtn({ chk = false }) {
-    if (chk) {
-        return(
-            <button className='btn'>
-                <img className='btn_img' src='./img/heart-fill-icon.svg' alt='heart-fill-icon' />
-            </button>
-        )
+    function handleFavorite() {
+        chk = !chk;
+        console.log(chk? "추가 했습니다." : "제거 했습니다.");
+        alert(chk? "추가 했습니다." : "제거 했습니다." );
     }
 
     return(
-        <button className='btn'>
-            <img className='btn_img' src='./img/heart-icon.svg' alt='heart-icon' />
+        <button className='btn' onClick={handleFavorite}>
+            <img className='btn_img' src={chk ? './img/heart-fill-icon.svg' : './img/heart-icon.svg'} alt='이미지' />
         </button>
-    )
+    );
 }
 
-function CourseItem({image, title, description, isFavorite}) {
+function CourseItem08({image, title, description, isFavorite}) {
     return (
         <>
             <article className="course">
-                <img className="course__img" src={image}  alt='이미지' />
+                <img className="course__img" src={image} alt='이미지' />
                 <div className="course__body">
                     <div className="course__title">
                         {title}
@@ -37,4 +35,4 @@ function CourseItem({image, title, description, isFavorite}) {
     );
 }
 
-export default CourseItem;
+export default CourseItem08;
